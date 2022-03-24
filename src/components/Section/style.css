@@ -1,0 +1,58 @@
+.seats {
+    width: 375px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .seat {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #c3cfd9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 5px;
+    border: 1px solid #808f9d;
+  }
+  
+  .seat p {
+    margin-top: 55px;
+  }
+  
+  .legend {
+    width: 375px;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .gray {
+    background-color: #c3cfd9;
+  }
+  
+  .green {
+    background-color: #8dd7cf;
+  }
+  
+  .yellow {
+    background-color: #fbe192;
+  }
+  
+  .infos {
+    width: 375px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+  
+  .infos h2 {
+    font-size: 18px;
+    line-height: 21px;
+    color: #293845;
+    display: block;
+  }
+  

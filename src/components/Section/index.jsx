@@ -7,6 +7,7 @@ import Stage from "../Stage";
 import Legend from "../Legend";
 import SendOrder from '../SendOrder';
 import Inputs from '../Inputs';
+import "./style.css";
 export default function Section({
     movie,
     movieInfo, setMovieInfo,
@@ -19,7 +20,7 @@ export default function Section({
     const [section, setSection] = React.useState([]);
     const { idSection } = useParams();
     useEffect(() => {
-      const request = axios.get();
+      const request = axios.get("https://mock-api.driven.com.br/api/v5/cineflex/showtimes/ID_DA_SESSAO/seats");
       request.then((resposta) => {
         setSection(resposta.data);
         setMovieInfo(resposta.data.day); 

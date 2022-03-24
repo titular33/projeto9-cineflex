@@ -1,4 +1,5 @@
 import axios from "axios";
+import "./style.css";
 export default function SendOrder({
     choosedSeats, 
     nameSeats, 
@@ -12,7 +13,7 @@ export default function SendOrder({
             cpf: inputCPF,
             name: inputName,
         };
-        const send = axios.post ("https",order);
+        const send = axios.post ("https://mock-api.driven.com.br/api/v5/cineflex/seats/book-many",order);
         send.then(treatment);
         send.catch(() => console.error("Failed to send", send.error))
 

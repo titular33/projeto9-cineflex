@@ -1,0 +1,11 @@
+.ticket {
+    display: flex;
+    width: 140px;
+    flex-wrap: wrap;
+    height: 90px;
+    flex-direction: column;
+  }
+  
+  .ticket .choosedSeat {
+    margin-right: 20px;
+  }
