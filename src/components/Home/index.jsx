@@ -20,7 +20,7 @@ export default function Home({movies, setMovies}) {
               {movies.map((movie) => 
               {
                   return (
-                      < Link to={ '/movie/${movie.id}' }>
+                      < Link to={`/Movie/${movie.id}`}>
                           <li>
                               <div className="movie">
                                     <img src={movie.posterURL} alt={"poster of movie " + movie.title}/>

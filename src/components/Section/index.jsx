@@ -20,13 +20,13 @@ export default function Section({
     const [section, setSection] = React.useState([]);
     const { idSection } = useParams();
     useEffect(() => {
-      const request = axios.get("https://mock-api.driven.com.br/api/v5/cineflex/showtimes/ID_DA_SESSAO/seats");
+      const request = axios.get(`https://mock-api.driven.com.br/api/v5/cineflex/showtimes/${idSection}/seats`);
       request.then((resposta) => {
         setSection(resposta.data);
         setMovieInfo(resposta.data.day); 
         setSectionTime(resposta.data.name);
       });
-    }, []);
+    });
   
     return (
       <>

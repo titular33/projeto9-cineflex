@@ -16,7 +16,7 @@ export default function Movie({ movie, setMovie }) {
     request.then((resposta) => {
       setMovie(resposta.data);
     });
-  }, []);
+  } );
 
   if (!movie.days) {
     return <div></div>;
