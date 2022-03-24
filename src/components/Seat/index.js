@@ -44,6 +44,5 @@ export default function Seat({
                  {name}
              </div>
          </li>
-
     );
 }
