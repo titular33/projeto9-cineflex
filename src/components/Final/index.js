@@ -6,7 +6,8 @@ export default function Final({
     titleMovie,
     name,
     CPF,
-}) {
+}) 
+{
     if (title === "Comprador") {
         return (
             <div className="final">
@@ -25,6 +26,4 @@ export default function Final({
             </p>
         </div>
     )
-
-
 }
