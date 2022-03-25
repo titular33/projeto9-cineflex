@@ -9,7 +9,7 @@ export default function Home({movies, setMovies}) {
      const promisse = axios.get ('https://mock-api.driven.com.br/api/v5/cineflex/movies');
      promisse.then((response) => {setMovies(response.data);});
 
-    })
+    },[])
 
 
  return (
