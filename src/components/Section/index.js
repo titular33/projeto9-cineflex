@@ -26,7 +26,7 @@ export default function Section({
         setMovieInfo(resposta.data.day); 
         setSectionTime(resposta.data.name);
       });
-    });
+    }, []);
   
     return (
       <>
