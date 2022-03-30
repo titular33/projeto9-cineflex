@@ -27,9 +27,9 @@ export default function Movie({ movie, setMovie }) {
       <Stage text ={"Selecione o horário"}/>
       <div className="container">
         <div className ="box">
-        {movie.length === 0 ? "" : movie.days.map((day) => {
+        {movie.length === 0 ? "" : movie.days.map((day,idMovie) => {
               return (
-                <div key={movie.id} className='times'>
+                <div key={idMovie} className='times'>
                   <div className="date"> {day.weekday} - {day.date}</div>
                   <div className='time'>
                     <Link to={`/Section/${idMovie}`}>

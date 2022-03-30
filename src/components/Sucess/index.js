@@ -31,7 +31,7 @@ export default function Sucess({
             <h2>Ingressos</h2>
             <div className='ticket'>
               {!nameSeats? "" : nameSeats.map((seat, i) => {
-                    return <div className='choosedSeat'>{nameSeats[i]}</div>;
+                    return <div className='choosedSeat' key={i} >{nameSeats[i]}  </div>;
                   })}
             </div>
           </div>
